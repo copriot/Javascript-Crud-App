@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud--App-JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+<marquee behavior="alternate" direction="right">Create--Read--Update--Delete</marquee>
+  
+    <!-- form objesi -->
+    <form>
+      
+        <h1 class="head-text">CRUD-APP</h1>
+        <div class="title">Kullanıcı Adı</div>
+        <input type="text" name="username" id="username" required />
+      
+      
+        <div class="title">E-Posta Adresi</div>
+        <input type="email" name="email" id="email" required />
+      
+      
+     <div class="btn-container"> <button onclick="addUser()" type="submit">Ekle</button>
+
+        <button type="submit" onclick="temizle()">Temizle</button></div>
+    </form>
+
+    
+    <!-- kullanıcı listesi -->
+    
+      <ul id="userList"></ul>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
